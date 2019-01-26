@@ -4,35 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
         <h1>Julia Fercello</h1>
-        <div><a href="index.html">About</a></div>
-        <div><a href="portfolio.html">Portfolio</a></div>
-        <div><a href="contact.html">Contact</a></div>
+        <ul class="nav">
+            <li class="about"><a href="index.html">About</a></li>
+            <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
+            <li class="contact"><a href="contact.html">Contact</a></li>
+        </ul>
     </header>
 
-    <section>
-        <h2>Contact</h2>
-        <!--<form action="mailto:someone@gmail.com" method="post" enctype="text/plain">-->
-        <form>
-            <label for="name">Name</label><br>
-            <input type="text" name="name"><br>
-            <label for="email">Email</label><br>
-            <input type="email" name="email"><br>
-            <label for="message">Message</label><br>
-            <textarea name="message"></textarea><br>
-            <button type="button" onclick="alert('Hello World!')">Submit</button>
+    <section class="backgroundpattern">
+        <section class="maincontent">
+            <h2>Contact</h2>
+            <form action="mailto:juliafercello@gmail.com" method="post" enctype="text/plain">
+                <form>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email"><br>
+                    <label for="message">Message</label><br>
+                    <textarea name="message"></textarea><br>
+                    <input type="submit" value="Submit">
 
-        </form>
-
+                </form>
+        </section>
     </section>
-    <footer>
-        <div>Copyright</div>
-    </footer>
+    <footer><br><br><br>Copyright &#169;</footer>
+
 </body>
 
 </html>
